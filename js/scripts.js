@@ -11,11 +11,11 @@ function isoTriangle (side1, side2, side3) {
   };
 };
 
-function scalTriangle (side1, side2, side3) {
-  if (side1 !== side2 && side1 !== side3 && side2 !== side3){
-    return true;
-  };
-};
+// function scalTriangle (side1, side2, side3) {
+//   if (side1 !== side2 && side1 !== side3 && side2 !== side3){
+//     return true;
+//   };
+// };
 
 function notATriangle (side1, side2, side3) {
   if (side1+side2 <= side3 || side1+side3 <= side2 || side2+side3 <= side1){
@@ -32,15 +32,19 @@ function notATriangle (side1, side2, side3) {
       const side2Input = parseInt($("#side2").val());
       const side3Input = parseInt($("#side3").val());
 
-      if (equTriangle(side1Input, side2Input, side3Input)) {
-        $("#result").text("You have an equilateral triangle!")
-      } else if (isoTriangle(side1Input, side2Input, side3Input)) {
-        $("#result").text("You have an isosceles triangle!")
-      } else if (scalTriangle(side1Input, side2Input, side3Input)) {
-        $("#result").text("You have a scalene triangle!")
+      if (side1Input + side2Input + side3Input){
+        if (notATriangle(side1Input, side2Input, side3Input)) {
+          $("#result").text("Sorry, you do not have a triangle!")
+        } else if (equTriangle(side1Input, side2Input, side3Input)) {
+          $("#result").text("You have an equilateral triangle!")
+        } else if (isoTriangle(side1Input, side2Input, side3Input)) {
+          $("#result").text("You have an isosceles triangle!")
+        } else {
+          $("#result").text("You have a scalene triangle!")
+        };
       } else {
-        $("#result").text("Sorry, you do not have a triangle!")
-      }
+        alert("Please enter numbers for each length.")
+      };
     });
   });
  
