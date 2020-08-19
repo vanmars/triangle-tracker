@@ -1,11 +1,11 @@
 # Triangle Tracker
 
-#### Triangle Tracker created on 8/13/2020
+#### Webpage using a from to determine triangle type (for Epicodus), 8/13/2020
 
 ### By _Vanessa Stewart_ & _Mark Tiapkov_
 
 ## Description
-This is a Triangle Tracker created to demonstrate knowedlge of js, and if else statements specifically
+_This is a web project to practice Bootstrap styling and using forms to gather data that is then processed with functions, conditionals, and jQuery event handlers. The webpage asks users for three lengths of a triangle. It returns a message informing the user whether those sides create a triangle and, if so, whether that triangle is an equilateral, isosceles, or scalene triangle._
 
 ## Installation/Setup
 * Clone this repository
@@ -20,9 +20,10 @@ For feedback/support you can reach Vanessa on Discord @Vanessa Stewart
 #3573 or Mark Tiapkov @Mark T#0558
 
 # Technologies Used
-* Js
-* Jquery
+
 * HTML5
+* CSS/Bootstrap
+* JS/jQuery
 
 ### License
 This site is licensed under the MIT license
